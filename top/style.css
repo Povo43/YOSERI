@@ -1,0 +1,116 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("ZenKurenaido-Regular.ttf") format("TrueType");
+    }
+
+/*■#ffffe0 #66665a*/
+
+body,html{
+    margin: 0;
+    font-family: 'Zenkurenaido', sans-serif;
+    font-size: 16px;
+}
+
+/*header*/
+header{
+    background-color: #ffffe0;
+}
+    header div{
+        text-align: center;
+    }
+    .logo{
+        height: 6vh;
+    }
+/*@header*/
+
+/*main-共通*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px 8px 8px;
+}
+    .card{
+        margin: 10px;
+        min-width: 320px;
+        height: 200px;
+        flex-grow: 1;
+
+        border-radius: 0.3rem;
+        background-color: #ffffec;
+        box-shadow: 3px 3px 3px 0 #4949491e;
+    }
+        .card div{
+            display: flex;
+        }
+            .card div h3{
+                margin: 0;
+                width: calc(100% - 50px);
+                text-align: center;
+
+                border-top-left-radius: 0.3rem;
+                background-color: #ffffcc;
+            }
+            .card div a{
+                width: 50px;
+                text-align: center;
+                font-size: 0.8rem;
+
+                border-top-right-radius: 0.3rem;
+                background-color: #ffffcc;
+                text-decoration: none;
+                color: #000000b7;
+            }
+/*@main-共通*/
+
+    /*main-タイマー*/
+        #timer{
+            margin: 5px;
+
+            display: flex;
+            justify-content: center;
+        }
+            .timer-input{
+                font-size: 64px;
+                width: 100px;
+                border: none;
+                box-shadow: 3px 3px 3px 0 #4949491e;
+                border-radius: 3px;
+            }
+            .timer-button{
+                margin-top: 10px;
+                width: 100px;
+                height: 32px;
+
+                font-family: 'Zenkurenaido', sans-serif;
+                font-size: 25px;
+                border: none;
+                box-shadow: 3px 3px 3px 0 #4949491e;
+                border-radius: 3px;
+            }
+                #timer-start{
+                    background-color: #fce7cb;
+                }
+                #timer-stop{
+                    background-color: #faebd7;
+                }
+                #timer-reset{
+                    background-color: #e4dacd;
+                }
+    /*@main-タイマー*/
+
+/*footer*/
+footer{
+    background-color: #ffffe0;
+    text-align: center;
+}
+/*@footer*/
+
+@media screen and (max-width: 767px) {
+
+    html{
+        font-size: 32px;
+    }
+}

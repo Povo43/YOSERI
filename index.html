@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!--基本情報-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <title>mima short programs</title>
+        <link rel="icon" type="image/png" href="./top/YOSERI-logo.png">
+        <meta name="description" content="便利なツールの寄せ集め場、それがYOSERI">
+        <!--css-->
+        <link rel="stylesheet" href="./top/style.css">
+        <!--google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+	<body>
+        <header>
+			<div>
+				<img src="./top/YOSERI-logo.png" alt="logo-yoseri" class="logo">
+            </div>
+     	</header>
+        
+        <main>
+            <!--カードテンプレート
+                <div class="card">
+                <div>
+                    <h3>a</h3>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </a>
+                </div>
+                <div id="a">
+                </div>
+            </div>-->
+
+            <!--タイマー-->
+            <div class="card">
+                <div>
+                    <!--タイトル-->
+                    <h3>タイマー</h3>
+                    <!--矢印-->
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </a>
+                </div>
+                <!--本体-->
+                <div id="timer">
+                    <form name="timer">
+                        <input type="number" name="timer-s" class="timer-input" min="0" max="24" oninput="javascript: this.value = this.value.slice(0, 2);">
+                        <input type="number" name="timer-s" class="timer-input" min="0" max="60" oninput="javascript: this.value = this.value.slice(0, 2);">
+                        <input type="number" name="timer-s" class="timer-input" min="0" max="60" oninput="javascript: this.value = this.value.slice(0, 2);">
+                        <br>
+                        <button name="timer-start" id="timer-start" class="timer-button">Start</button>
+                        <button name="timer-stop" id="timer-stop" class="timer-button">Stop</button>
+                        <button name="timer-reset" id="timer-reset" class="timer-button">Reset</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div>
+                    <!--タイトル-->
+                    <h3>a</h3>
+                    <!--矢印-->
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </a>
+                </div>
+                <!--本体-->
+                <div id="a">
+                </div>
+            </div>
+            
+        </main>
+        
+        <footer>
+          <p class="copyright">©Povo</p>
+        </footer>
+    <script src="./top/top.js"></script>
+    </body>
+</html>

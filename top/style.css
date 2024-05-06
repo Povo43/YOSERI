@@ -6,6 +6,15 @@
     src: url("ZenKurenaido-Regular.ttf") format("TrueType");
     }
 
+
+/*ノーマライズ*/
+input{
+    border: none;
+    box-shadow: 3px 3px 3px 0 #4949491e;
+    border-radius: 3px;
+}
+
+
 /*■#ffffe0 #66665a*/
 
 body,html{
@@ -42,10 +51,11 @@ main{
         background-color: #ffffec;
         box-shadow: 3px 3px 3px 0 #4949491e;
     }
-        .card div{
+        .title{
             display: flex;
         }
-            .card div h3{
+
+            .title h3{
                 margin: 0;
                 width: calc(100% - 50px);
                 text-align: center;
@@ -53,7 +63,7 @@ main{
                 border-top-left-radius: 0.3rem;
                 background-color: #ffffcc;
             }
-            .card div a{
+            .title a{
                 width: 50px;
                 text-align: center;
                 font-size: 0.8rem;
@@ -63,21 +73,19 @@ main{
                 text-decoration: none;
                 color: #000000b7;
             }
+        .card-body{
+           margin: 10px;
+        }
+
 /*@main-共通*/
 
     /*main-タイマー*/
         #timer{
-            margin: 5px;
-
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
             .timer-input{
                 font-size: 64px;
                 width: 100px;
-                border: none;
-                box-shadow: 3px 3px 3px 0 #4949491e;
-                border-radius: 3px;
             }
             .timer-button{
                 margin-top: 10px;

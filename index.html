@@ -30,13 +30,13 @@
                         </span>
                     </a>
                 </div>
-                <div id="a">
+                <div class="card-body" id="a">
                 </div>
             </div>-->
 
             <!--タイマー-->
             <div class="card">
-                <div>
+                <div class="title">
                     <!--タイトル-->
                     <h3>タイマー</h3>
                     <!--矢印-->
@@ -47,8 +47,7 @@
                     </a>
                 </div>
                 <!--本体-->
-                <div id="timer">
-                    <form name="timer">
+                <div class="card-body" id="timer">
                         <input type="number" name="timer-s" class="timer-input" min="0" max="24" oninput="javascript: this.value = this.value.slice(0, 2);">
                         <input type="number" name="timer-s" class="timer-input" min="0" max="60" oninput="javascript: this.value = this.value.slice(0, 2);">
                         <input type="number" name="timer-s" class="timer-input" min="0" max="60" oninput="javascript: this.value = this.value.slice(0, 2);">
@@ -56,12 +55,12 @@
                         <button name="timer-start" id="timer-start" class="timer-button">Start</button>
                         <button name="timer-stop" id="timer-stop" class="timer-button">Stop</button>
                         <button name="timer-reset" id="timer-reset" class="timer-button">Reset</button>
-                    </form>
                 </div>
             </div>
-            
+
+            <!--一時的メモ-->
             <div class="card">
-                <div>
+                <div class="title">
                     <!--タイトル-->
                     <h3>a</h3>
                     <!--矢印-->
@@ -72,10 +71,11 @@
                     </a>
                 </div>
                 <!--本体-->
-                <div id="a">
+                <div class="card-body" id="clipboard">
+                    <input >
                 </div>
             </div>
-            
+
         </main>
         
         <footer>

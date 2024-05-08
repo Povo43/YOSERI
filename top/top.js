@@ -29,4 +29,5 @@ function timer_display(){
 
 function timer_start(){
     /*呼び出せてる*/
+    alert("3")
 }

@@ -11,7 +11,6 @@ START.addEventListener('click', () => {
     alert("スタートしました");
     HOURS.value = "2";
     MINITS.value = "2";
-    SECONDS.value = "2";
     timer_start();
 });
 
@@ -29,5 +28,5 @@ function timer_display(){
 
 function timer_start(){
     /*呼び出せてる*/
-    alert("3")
+    SECONDS.value = "10";
 }
